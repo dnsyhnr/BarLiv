@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barakah Living</title>
+    <link rel="stylesheet" href="stylingBarLiv.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="small-header">
+      <div  class= "icon-menu">
+        <button class="menu" onclick="openMenu()">
+          <i class="fas fa-bars fe-2x"></i>
+        </button>
+      </div>
+
+      <div class="sidebar" id="sidebar">
+        <div class="sideHeader"><header class="side">
+          <h1 class="shortTitle"><i class="fa-solid fa-star-and-crescent"></i>BarLiv</h1>
+        </header></div>
+
+        <div class="menuList">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="#" class="categories" onclick="categoryList()">
+            <i class="fa-solid fa-list"></i> Categories</a>
+              <div id="list">
+                <a href="livingRoom.html">Living Room</a>
+                <a href="Kitchen.html">Kitchen</a>
+                <a href="Bedroom.html">Bedroom</a>
+                <a href="accessoriesDeco.html">Accessories Deco</a>
+                <a href="Other.html">other</a>
+              </div>
+          <a href="discount.html"> <i class="fa-solid fa-tag"></i> Discount Section</a>
+           <a href="history.html"><i class="fa-solid fa-clock"></i>History</a>
+        </div>
+      </div>
+
+      <div class="nav">
+        <a href="cart.html"><button class="openCart">
+          <i class="fas fa-cart-shopping"></i> Cart</button></a>
+        <button class="openNoti" onclick="toggleNotification()">
+          <i class="fa-solid fa-bell"></i> Notification</button>
+        <a href="#" class="login-icon" onclick="LoginList()">
+          <i class="fas fa-user-circle"></i>
+        </a>
+          <div id="list2">
+              <a href="Profile.html">Profile</a>
+              <a href="logIn.html">Log Out</a>
+          </div>
+
+      <div id="notificationContainer" class="notification-container">
+        <ul id="messageList">
+          <li>Your parcel FURT134652XY has been delivered.</li>
+          <li>Your parcel FURT139875XY has been delivered.</li>
+          <li>Your parcel FURT612980XY is out for delivery.</li>
+        </ul>
+      </div>
+
+  </header>
+
+  <header class="big-header">
+    <h1>بار ليو</h1>
+    <h1 id="div-bar">  | </h1>
+    <h1 id="half-first">Bar</h1> <h1 id="half-last">akah</h1>
+    <h1 id="half-first">Liv</h1> <h1 id="half-last">ing</h1>
+  </header>
+
+  <div class="content">
+    <!-- Profile Section -->
+    <div class="profile-container">
+      <!-- Profile Title -->
+      <div class="profile-title">
+        <h1>My Profile</h1>
+      </div>
+
+      <!-- Profile Picture -->
+      <div class="profile-picture">
+        <img src="https://www.pngmart.com/files/23/Profile-PNG-Photo.png" alt="Profile Picture" />
+      </div>
+
+      <!-- Profile Info Box -->
+      <div class="profile-info">
+        <div class="detail-item">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name" disabled />
+        </div>
+        <div class="detail-item">
+          <label for="email">Email:</label>
+          <input type="text" id="email" placeholder="Enter your email" disabled />
+        </div>
+        <div class="detail-item">
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone" placeholder="Enter your phone number" disabled />
+        </div>
+        <div class="detail-item">
+          <label for="status">Status:</label>
+          <input type="text" id="status" placeholder="Choose (Students or Non-Students)" disabled />
+        </div>
+        <div class="detail-item">
+          <label for="university">University:</label>
+          <input type="text" id="university" placeholder="Enter your studies/workplace" disabled />
+        </div>
+
+        <div class="button-group">
+          <button id="edit-button">Edit Profile</button>
+          <button id="save-button">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Settings Section -->
+<div class="settings-container">
+  <div class="settings-header">
+    <h2>Settings</h2>
+  </div>
+  <div class="settings-content">
+    <p>Adjust your preferences and account details here.</p>
+
+    <!-- Change Password Button -->
+    <button id="change-password-button" onclick="togglePasswordForm()">Change Password</button>
+
+    <!-- Hidden Password Change Form -->
+    <div id="password-form" style="display: none;">
+      <form id="change-password-form">
+        <label for="new-password">New Password:</label>
+        <input type="password" id="new-password" placeholder="Enter new password" required />
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" placeholder="Confirm new password" required />
+        <button type="submit">Save New Password</button>
+      </form>
+    </div>
+
+    <!-- Update Preferences Button -->
+    <button id="update-preferences-button" onclick="togglePreferencesForm()">Update Preferences</button>
+
+    <!-- Hidden Preferences Form -->
+    <div id="preferences-form" style="display: none;">
+      <form id="update-preferences">
+        <label for="language">Language:</label>
+        <select id="language">
+          <option value="english">English</option>
+          <option value="arabic">Arabic</option>
+          <option value="french">French</option>
+        </select>
+
+        <label for="notifications">Enable Notifications:</label>
+        <input type="checkbox" id="notifications" checked />
+
+        <label for="theme">Theme:</label>
+        <select id="theme">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+
+        <button type="submit">Save Preferences</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Log Out Button (Centered) -->
+  <div class="logout-container">
+    <button class="logout-button"><a href="logIn.html">Log Out</a></button>
+  </div>
+</div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

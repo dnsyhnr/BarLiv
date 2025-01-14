@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barakah Living</title>
+    <link rel="stylesheet" href="stylingBarliv.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+
+    <style>
+      #sidebar .menuList .home{
+        background-color: #1D201D;
+      }
+    </style>
+</head>
+
+<body>
+  <header class="small-header">
+      <div  class= "icon-menu">
+        <button class="menu" onclick="openMenu()">
+          <i class="fas fa-bars fe-2x"></i>
+        </button>
+      </div>
+
+      <div class="sidebar" id="sidebar">
+        <div class="sideHeader"><header class="side">
+          <h1 class="shortTitle"><i class="fa-solid fa-star-and-crescent"></i>BarLiv</h1>
+        </header></div>
+
+        <div class="menuList">
+          <a href="#" class="home"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="#" class="categories" onclick="categoryList()">
+            <i class="fa-solid fa-list"></i> Categories</a>
+              <div id="list">
+                <a href="livingRoom.html">Living Room</a>
+                <a href="Kitchen.html">Kitchen</a>
+                <a href="Bedroom.html">Bedroom</a>
+                <a href="accessoriesDeco.html">Accessories Deco</a>
+                <a href="Other.html">Others</a>
+              </div>
+          <a href="discount.html"> <i class="fa-solid fa-tag"></i> Discount Section</a>
+           <a href="history.html"><i class="fa-solid fa-clock"></i>History</a>
+        </div>
+      </div>
+
+      <div class="nav">
+        <a href="cart.html"><button class="openCart">
+          <i class="fas fa-cart-shopping"></i> Cart</button></a>
+        <button class="openNoti" onclick="toggleNotification()">
+          <i class="fa-solid fa-bell"></i> Notification</button>
+        <a href="#" class="login-icon" onclick="LoginList()">
+          <i class="fas fa-user-circle"></i>
+        </a>
+          <div id="list2">
+              <a href="Profile.html">Profile</a>
+              <a href="logIn.html">Log Out</a>
+          </div>
+
+      <div id="notificationContainer" class="notification-container">
+        <ul id="messageList">
+          <li>Your parcel FURT134652XY has been delivered.</li>
+          <li>Your parcel FURT139875XY has been delivered.</li>
+          <li>Your parcel FURT612980XY is out for delivery.</li>
+        </ul>
+      </div>
+
+  </header>
+
+  <header class="big-header">
+    <h1 >بار ليو</h1>
+    <h1 id="div-bar">  | </h1>
+    <h1 id="half-first">Bar</h1> <h1 id="half-last">akah</h1>
+    <h1 id="half-first">Liv</h1> <h1 id="half-last">ing</h1>
+ </header>
+
+
+  <div class="content">
+    <div class="quick-container">
+      <div class="quick-links">
+        <div><a href="discount.html">
+          <img src="https://cdn-icons-png.flaticon.com/512/3837/3837136.png" alt="Voucher">
+          <p>VOUCHER</p>
+        </a></div>
+        <div>
+          <img src="https://cdn-icons-png.flaticon.com/512/2550/2550375.png" alt="Calendar Islamic">
+          <p>CALENDAR ISLAMIC</p>
+        </div>
+        <div>
+          <img src="https://cdn-icons-png.flaticon.com/512/2080/2080878.png" alt="Quiz & Puzzle">
+          <p>QUIZ & PUZZLE</p>
+        </div>
+        <div>
+          <img src="https://freepngimg.com/thumb/web_design/48721-9-donate-free-clipart-hq.png" alt="Donation">
+          <p>DONATION</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-container">
+      <h2>Advertisement</h2>
+    </div>
+
+    <div class="section">
+    <div class="left">
+      <div class="deco-img3">
+        <img src="https://i.pinimg.com/originals/ef/cc/9b/efcc9be3a334398ea0775e55a8deebe5.jpg" alt="Advertisement Content">
+      </div>
+  </div>
+
+  <div class="center">
+    <div class="deco-img3">
+      <img src="https://as1.ftcdn.net/v2/jpg/03/92/21/08/1000_F_392210867_q6PrmEHrooZv3JFYVMGoNkco4iBcR2w7.jpg" alt="Advertisement Content">
+    </div>
+</div>
+
+<div class="center">
+  <div class="deco-img3">
+    <img src="https://www.everydayonsales.com/wp-content/uploads/2020/03/Ashley-Furniture-HomeStore-Bedroom-Set-Promotion.jpg" alt="Advertisement Content">
+  </div>
+</div>
+
+<div class="right">
+  <div class="deco-img3">
+    <img src="https://th.bing.com/th/id/OIP.JiBPAnncSNg3zeZxyi_gKwHaEH?rs=1&pid=ImgDetMain" alt="Advertisement Content">
+  </div>
+</div>
+</div>
+
+    <div class="section">
+    <div class="left">
+      <div class="header-container">
+        <h2>Decoration Idea</h2>
+      </div>
+      <div class="deco-img">
+        <img src="https://i.etsystatic.com/25356305/r/il/83e372/2692386229/il_fullxfull.2692386229_k260.jpg" alt="Living Room Decoration">
+      </div>
+    </div>
+    <div class="center">
+      <div class="header-container">
+        <h2>Decoration Idea</h2>
+      </div>
+      <div class="deco-img">
+        <img src="https://i.etsystatic.com/24123058/r/il/97fbe3/2882844191/il_570xN.2882844191_2pp8.jpg" alt="Living Room Decoration">
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="header-container">
+        <h2>Decoration Idea</h2>
+      </div>
+      <div class="deco-img">
+        <img src="https://i.pinimg.com/originals/02/db/d0/02dbd03dcc9aa81afb9e328e0abceeed.jpg" alt="Advertisement Content">
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="left">
+      <div class="header-container">
+        <h2>Decoration Idea</h2>
+      </div>
+      <div class="deco-img">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/cce30156408261.59adb34fc1c0a.jpg" alt="Living Room Decoration">
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="header-container">
+        <h2>Decoration Idea</h2>
+      </div>
+      <div class="deco-img">
+        <img src="https://img.freepik.com/premium-photo/room-with-rug-plant-middle_705708-2702.jpg" alt="Living Room Decoration">
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="header-container">
+        <h2>Decoration Idea</h2>
+      </div>
+      <div class="deco-img">
+        <img src="https://th.bing.com/th/id/OIP.A_tU8X53hjvs8GkBy7bz6wHaHa?rs=1&pid=ImgDetMain" alt="Living Room Decoration">
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="bottom">
+      <div class="header-container">
+        <h2>Decoration Idea</h2>
+      </div>
+      <div class="deco-img2">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/00948467397573.5b38c302c354e.jpg" alt="Curtain Decoration">
+      </div>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>

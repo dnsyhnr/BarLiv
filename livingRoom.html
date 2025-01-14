@@ -1,0 +1,174 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barakah Living</title>
+    <link rel="stylesheet" href="stylingBarliv.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+
+    <style>
+      #sidebar .menuList .home{
+        background-color: #1D201D;
+      }
+    </style>
+</head>
+
+<body>
+  <header class="small-header">
+      <div  class= "icon-menu">
+        <button class="menu" onclick="openMenu()">
+          <i class="fas fa-bars fe-2x"></i>
+        </button>
+      </div>
+
+      <div class="sidebar" id="sidebar">
+        <div class="sideHeader"><header class="side">
+          <h1 class="shortTitle"><i class="fa-solid fa-star-and-crescent"></i>BarLiv</h1>
+        </header></div>
+
+        <div class="menuList">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="#" class="categories" onclick="categoryList()">
+            <i class="fa-solid fa-list"></i> Categories</a>
+              <div id="list">
+                <a href="livingRoom.html">Living Room</a>
+                <a href="Kitchen.html">Kitchen</a>
+                <a href="Bedroom.html">Bedroom</a>
+                <a href="accessoriesDeco.html">Accessories Deco</a>
+                <a href="Other.html">other</a>
+              </div>
+          <a href="discount.html"> <i class="fa-solid fa-tag"></i> Discount Section</a>
+           <a href="history.html"><i class="fa-solid fa-clock"></i>History</a>
+        </div>
+      </div>
+
+      <div class="nav">
+        <a href="cart.html"><button class="openCart">
+          <i class="fas fa-cart-shopping"></i> Cart</button></a>
+        <button class="openNoti" onclick="toggleNotification()">
+          <i class="fa-solid fa-bell"></i> Notification</button>
+        <a href="#" class="login-icon" onclick="LoginList()">
+          <i class="fas fa-user-circle"></i>
+        </a>
+          <div id="list2">
+              <a href="Profile.html">Profile</a>
+              <a href="logIn.html">Log Out</a>
+          </div>
+
+      <div id="notificationContainer" class="notification-container">
+        <ul id="messageList">
+          <li>Your parcel FURT134652XY has been delivered.</li>
+          <li>Your parcel FURT139875XY has been delivered.</li>
+          <li>Your parcel FURT612980XY is out for delivery.</li>
+        </ul>
+      </div>
+
+  </header>
+
+  <header class="big-header">
+    <h1 >بار ليو</h1>
+    <h1 id="div-bar">  | </h1>
+    <h1 id="half-first">Bar</h1> <h1 id="half-last">akah</h1>
+    <h1 id="half-first">Liv</h1> <h1 id="half-last">ing</h1>
+ </header>
+
+
+  <div class="content">
+    <div class="search-bar">
+      <input type="text" placeholder="Search" id="searchInput" onkeyup="searchItems()">
+      <select id="filterCategory">
+        <option value="all">All Categories</option>
+        <option value="chair">Chair</option>
+        <option value="table">Table</option>
+      </select>
+    </div>
+
+    <div class="list">
+       <div class="grid">
+            <div class="card-chair">
+                <img src="https://m.media-amazon.com/images/I/81bJXAdn0lL.jpg" alt="As-Salam Sectional Sofa">
+                <h3 class="name">As-Salam Sectional Sofa</h3>
+                <p class="price">RM 1220.40</p>
+                <p class="location">Selangor</p>
+            </div>
+
+            <div class="card-chair">
+                <img src="https://m.media-amazon.com/images/I/713%20GPeSwhL.jpg" alt="Ridwan Recline">
+                <h3 class="name">Ridwan Recline</h3>
+                <p class="price">RM 700.30</p>
+                <p class="location">Selangor</p>
+            </div>
+
+            <div class="card-chair">
+                <img src="https://eurekaergonomic.com/cdn/shop/files/Image05_5ca8514f-e79b-4bf4-87c8-4bef1a7f861c.jpg" alt="Itqan Lounge Chair">
+                <h3 class="name">Itqan Lounge Chair</h3>
+                <p class="price">RM 1000.00</p>
+                <p class="location">Kedah</p>
+            </div>
+
+            <div class="card-chair">
+                <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1675270879-traditional_sofa_love_seat-2_1.jpg" alt="Mawaddah Love Seat">
+                <h3 class="name">Mawaddah Love Seat</h3>
+                <p class="price">RM 1550.40</p>
+                <p class="location">Penang</p>
+            </div>
+
+            <div class="card-table">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpLCNoga4WwXs5MA1I43yyl4_dfpRG08N0uw&s" alt="Sidq Console Table">
+                <h3 class="name">Sidq Console Table</h3>
+                <p class="price">RM 1220.00</p>
+                <p class="location">Sarawak</p>
+            </div>
+
+            <div class="card-table">
+                <img src="https://s.alicdn.com/@sc04/kf/H63ef1fd7ddf34c9991ef42a0ca49ebf3x.jpg_300x300.jpg" alt="Adl Coffee Table Set">
+                <h3 class="name">Adl Coffee Table Set</h3>
+                <p class="price">RM 1020.40</p>
+                <p class="location">Pahang</p>
+            </div>
+
+            <div class="card-chair">
+                <img src="https://i5.walmartimages.com/asr/de75e591-6350-40c4-8c8b-dfe2f00bf749.b12ab83bcbb702dd01fa886cd9593006.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Xuhd Accent Chair">
+                <h3 class="name">Xuhd Accent Chair</h3>
+                <p class="price">RM 1150.40</p>
+                <p class="location">Selangor</p>
+            </div>
+
+            <div class="card-table">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHKWBkJemIxeOFuRtxBhcG8tTV7GiwWgPJ8A&s" alt="Tawakkul Side Table">
+                <h3 class="name">Tawakkul Side Table</h3>
+                <p class="price">RM 1770.00</p>
+                <p class="location">Melaka</p>
+            </div>
+
+            <div class="card-chair">
+                <img src="https://i5.walmartimages.com/asr/f621c66a-42f3-44a0-b63b-9f1c27b8b7ca.1f78ffe3b7f9e7e4b4e65e272897fcc2.jpeg" alt="Barakah Sofa Set">
+                <h3 class="name">Barakah Sofa Set</h3>
+                <p class="price">RM 1230.40</p>
+                <p class="location">Johor</p>
+            </div>
+
+            <div class="card-table">
+                <img src="https://www.amazinghome.my/cdn/shop/files/61_2695ed1f-c71a-442a-95dd-5838ee1fb7c6_1200x1200.png?v=1683042819" alt="Noor Coffee Table">
+                <h3 class="name">Noor Coffee Table</h3>
+                <p class="price">RM 1120.10</p>
+                <p class="location">Perak</p>
+            </div>
+
+            <div class="card-chair">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3SLjdDdRsgQO4kuOFrZTKBk6gsP-zDmvYxQ&s" alt="Sakinah Armchair">
+                <h3 class="name">Sakinah Armchair</h3>
+                <p class="price">RM 1220.40</p>
+                <p class="location">Sabah</p>
+            </div>
+
+            <div class="card-table">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTaAsvWQs3sj4iKoBovQwYl4_rl1aAytwE8Q&s" alt="Rahmah TV Stand">
+                <h3 class="name">Rahmah TV Stand</h3>
+                <p class="price">RM 10,240.40</p>
+                <p class="location">Selangor</p>
+            </div>
+       </div>
+    </div>
+      <script src="main.js"></script>
+</body>

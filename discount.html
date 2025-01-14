@@ -1,0 +1,117 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barakah Living</title>
+    <link rel="stylesheet" href="stylingBarliv.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+
+    <style>
+      #sidebar .menuList .discount{
+        background-color: #1D201D;
+      }
+    </style>
+</head>
+
+<body>
+  <header class="small-header">
+      <div  class= "icon-menu">
+        <button class="menu" onclick="openMenu()">
+          <i class="fas fa-bars fe-2x"></i>
+        </button>
+      </div>
+
+      <div class="sidebar" id="sidebar">
+        <div class="sideHeader"><header class="side">
+          <h1 class="shortTitle"><i class="fa-solid fa-star-and-crescent"></i>BarLiv</h1>
+        </header></div>
+
+        <div class="menuList">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="#" class="categories" onclick="categoryList()">
+            <i class="fa-solid fa-list"></i> Categories</a>
+              <div id="list">
+                <a href="livingRoom.html">Living Room</a>
+                <a href="Kitchen.html">Kitchen</a>
+                <a href="Bedroom.html">Bedroom</a>
+                <a href="accessoriesDeco.html">Accessories Deco</a>
+                <a href="Other.html">other</a>
+              </div>
+          <a href="discount.html"> <i class="fa-solid fa-tag"></i> Discount Section</a>
+           <a href="history.html"><i class="fa-solid fa-clock"></i>History</a>
+        </div>
+      </div>
+
+      <div class="nav">
+        <a href="cart.html"><button class="openCart">
+          <i class="fas fa-cart-shopping"></i> Cart</button></a>
+        <button class="openNoti" onclick="toggleNotification()">
+          <i class="fa-solid fa-bell"></i> Notification</button>
+        <a href="#" class="login-icon" onclick="LoginList()">
+          <i class="fas fa-user-circle"></i>
+        </a>
+          <div id="list2">
+              <a href="Profile.html">Profile</a>
+              <a href="logIn.html">Log Out</a>
+          </div>
+
+      <div id="notificationContainer" class="notification-container">
+        <ul id="messageList">
+          <li>Your parcel FURT134652XY has been delivered.</li>
+          <li>Your parcel FURT139875XY has been delivered.</li>
+          <li>Your parcel FURT612980XY is out for delivery.</li>
+        </ul>
+      </div>
+
+  </header>
+
+  <header class="big-header">
+    <h1 >بار ليو</h1>
+    <h1 id="div-bar">  | </h1>
+    <h1 id="half-first">Bar</h1> <h1 id="half-last">akah</h1>
+    <h1 id="half-first">Liv</h1> <h1 id="half-last">ing</h1>
+ </header>
+
+ <div class="content">
+  <div class="content-disc" id="content-disc">
+    <header>
+      <h1> Discount & Rewards</h1>
+    </header>
+
+    <div class="discounts">
+      <div class="left">
+        <h2>30% off Capped at RM100</h2>
+        <p>Min. Spend RM1500</p>
+        <p><i class="fa-solid fa-clock"></i>  Use in: 3 days</p>
+      </div>
+      <div class="right">
+        <button onclick="claimBtn()" id="claim">Claim</button>
+      </div>
+    </div>
+
+    <div class="discounts">
+      <div class="left">
+        <h2>RM200 off</h2>
+        <p>Min. Spend RM3500</p>
+        <p><i class="fa-solid fa-clock"></i>  Use in: 7 days</p>
+      </div>
+      <div class="right">
+        <button onclick="claimBtn()" id="claim">Claim</button>
+      </div>
+    </div>
+
+    <div class="discounts">
+      <div class="left">
+        <h2>Free Shipping</h2>
+        <p>Min. Spend RM10 000</p>
+        <p><i class="fa-solid fa-clock"></i>  Use in: 2 days</p>
+      </div>
+      <div class="right">
+        <button onclick="claimBtn()" id="claim">Claim</button>
+      </div>
+    </div>
+
+  </div>
+ </div>
+ <script src="main.js"></script>
+</body>

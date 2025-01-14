@@ -1,0 +1,174 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barakah Living</title>
+    <link rel="stylesheet" href="stylingBarliv.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+
+    <style>
+      #sidebar .menuList .home{
+        background-color: #1D201D;
+      }
+    </style>
+</head>
+
+<body>
+  <header class="small-header">
+      <div  class= "icon-menu">
+        <button class="menu" onclick="openMenu()">
+          <i class="fas fa-bars fe-2x"></i>
+        </button>
+      </div>
+
+      <div class="sidebar" id="sidebar">
+        <div class="sideHeader"><header class="side">
+          <h1 class="shortTitle"><i class="fa-solid fa-star-and-crescent"></i>BarLiv</h1>
+        </header></div>
+
+        <div class="menuList">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="#" class="categories" onclick="categoryList()">
+            <i class="fa-solid fa-list"></i> Categories</a>
+              <div id="list">
+                <a href="livingRoom.html">Living Room</a>
+                <a href="Kitchen.html">Kitchen</a>
+                <a href="Bedroom.html">Bedroom</a>
+                <a href="accessoriesDeco.html">Accessories Deco</a>
+                <a href="Other.html">other</a>
+              </div>
+          <a href="discount.html"> <i class="fa-solid fa-tag"></i> Discount Section</a>
+           <a href="history.html"><i class="fa-solid fa-clock"></i>History</a>
+        </div>
+      </div>
+
+      <div class="nav">
+        <a href="cart.html"><button class="openCart">
+          <i class="fas fa-cart-shopping"></i> Cart</button></a>
+        <button class="openNoti" onclick="toggleNotification()">
+          <i class="fa-solid fa-bell"></i> Notification</button>
+        <a href="#" class="login-icon" onclick="LoginList()">
+          <i class="fas fa-user-circle"></i>
+        </a>
+          <div id="list2">
+              <a href="Profile.html">Profile</a>
+              <a href="logIn.html">Log Out</a>
+          </div>
+
+      <div id="notificationContainer" class="notification-container">
+        <ul id="messageList">
+          <li>Your parcel FURT134652XY has been delivered.</li>
+          <li>Your parcel FURT139875XY has been delivered.</li>
+          <li>Your parcel FURT612980XY is out for delivery.</li>
+        </ul>
+      </div>
+
+  </header>
+
+  <header class="big-header">
+    <h1 >بار ليو</h1>
+    <h1 id="div-bar">  | </h1>
+    <h1 id="half-first">Bar</h1> <h1 id="half-last">akah</h1>
+    <h1 id="half-first">Liv</h1> <h1 id="half-last">ing</h1>
+ </header>
+
+
+  <div class="content">
+    <div class="search-bar">
+      <input type="text" placeholder="Search" onkeyup="searchItems()" id="searchInput">
+      <select id="filterCategory">
+        <option value="all">All Categories</option>
+        <option value="garden">Garden</option>
+        <option value="balcony">Balcony</option>
+      </select>
+    </div>
+
+    <div class="list">
+       <div class="grid">
+            <div class="card-garden">
+                <img src="https://images.thdstatic.com/productImages/fa566db5-8411-4ee8-bd0b-c10bdfdc3a42/svn/evergreen-outdoor-benches-pha074-64_600.jpg" alt="Hassan Garden Benches">
+                <h3 class="name">Hassan Garden Benches</h3>
+                <p class="price">RM 120.40</p>
+                <p class="location">Kuala Lumpur</p>
+            </div>
+
+            <div class="card-balcony">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG5XXpG6L1xcdeyuCXmJnwYPUYth8aR2ZpxQ&s" alt="Outdoor Clocks">
+                <h3 class="name">Outdoor Clocks</h3>
+                <p class="price">RM 120.30</p>
+                <p class="location">Penang</p>
+            </div>
+
+            <div class="card-balcony">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXR9pSOufWIQ1COXyqLVYf3BVW5w3dhQjqVQ&s" alt="Outdoor Mirrors">
+                <h3 class="name">Outdoor Mirrors</h3>
+                <p class="price">RM 100.00</p>
+                <p class="location">Kelantan</p>
+            </div>
+
+            <div class="card-garden">
+                <img src="https://m.media-amazon.com/images/I/81mXs+rslBL.jpg" alt="Furqan Swing Chairs">
+                <h3 class="name">Furqan Swing Chairs</h3>
+                <p class="price">RM 1123.40</p>
+                <p class="location">Sarawak</p>
+            </div>
+
+            <div class="card-garden">
+                <img src="https://m.media-amazon.com/images/I/71jaz8l27FL.jpg" alt="Barakah Hanging Hammocks">
+                <h3 class="name">Hanging Hammocks</h3>
+                <p class="price">RM 1220.00</p>
+                <p class="location">Sabah</p>
+            </div>
+
+            <div class="card-balcony">
+                <img src="https://m.media-amazon.com/images/I/81cnbOXmqIL._AC_SL1500_.jpg" alt="Outdoor Umbrellas">
+                <h3 class="name">Outdoor Umbrellas</h3>
+                <p class="price">RM 1020.40</p>
+                <p class="location">Kedah</p>
+            </div>
+
+            <div class="card-balcony">
+                <img src="https://m.media-amazon.com/images/I/71XYwH1tEPL._AC_SL1300_.jpg" alt="Outdoor String Lights">
+                <h3 class="name">Outdoor String Lights</h3>
+                <p class="price">RM 50.40</p>
+                <p class="location">Terengganu</p>
+            </div>
+
+            <div class="card-balcony">
+                <img src="https://m.media-amazon.com/images/I/91eYhSmpfxL._AC_SL1500_.jpg" alt="Outdoor Rugs">
+                <h3 class="name">Outdoor Rugs</h3>
+                <p class="price">RM 117.00</p>
+                <p class="location">Pahang</p>
+            </div>
+
+            <div class="card-garden">
+                <img src="https://anbotstore.com/cdn/shop/files/yl04_8.jpg?v=1683703844&width=1600" alt="Folding Chairs">
+                <h3 class="name">Folding Chairs</h3>
+                <p class="price">RM 113.40</p>
+                <p class="location">Johor</p>
+            </div>
+
+            <div class="card-balcony">
+                <img src="https://m.media-amazon.com/images/I/91puMWvl3sL.jpg" alt="Decking Tiles">
+                <h3 class="name">Decking Tiles</h3>
+                <p class="price">RM 12.10/pcs</p>
+                <p class="location">Perlis</p>
+            </div>
+
+            <div class="card-garden">
+                <img src="https://i5.walmartimages.com/seo/MF-Studio-9-Seat-Patio-Conversation-Set-Metal-Outdoor-Furniture-Sofa-Set-for-9-Person-Beige_85286377-7625-493f-95f3-d117e8f76c98.e433aba645c4a110140aee769d188729.jpeg" alt="Sakinah Outdoor Coffee Tables">
+                <h3 class="name">Coffee Tables</h3>
+                <p class="price">RM 1150.40</p>
+                <p class="location">Negeri Sembilan</p>
+            </div>
+
+            <div class="card-balcony">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw8pjKJC3j1fEas2wQT7EEsLrjUxSlh6ePWQ&s" alt="Artificial Grass">
+                <h3 class="name">Artificial Grass</h3>
+                <p class="price">RM 40.40/pcs</p>
+                <p class="location">Selangor</p>
+            </div>
+       </div>
+    </div>
+      <script src="main.js"></script>
+</body>

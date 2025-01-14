@@ -1,0 +1,174 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barakah Living</title>
+    <link rel="stylesheet" href="stylingBarliv.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+
+    <style>
+      #sidebar .menuList .home{
+        background-color: #1D201D;
+      }
+    </style>
+</head>
+
+<body>
+  <header class="small-header">
+      <div  class= "icon-menu">
+        <button class="menu" onclick="openMenu()">
+          <i class="fas fa-bars fe-2x"></i>
+        </button>
+      </div>
+
+      <div class="sidebar" id="sidebar">
+        <div class="sideHeader"><header class="side">
+          <h1 class="shortTitle"><i class="fa-solid fa-star-and-crescent"></i>BarLiv</h1>
+        </header></div>
+
+        <div class="menuList">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="#" class="categories" onclick="categoryList()">
+            <i class="fa-solid fa-list"></i> Categories</a>
+              <div id="list">
+                <a href="livingRoom.html">Living Room</a>
+                <a href="Kitchen.html">Kitchen</a>
+                <a href="Bedroom.html">Bedroom</a>
+                <a href="accessoriesDeco.html">Accessories Deco</a>
+                <a href="Other.html">other</a>
+              </div>
+          <a href="discount.html"> <i class="fa-solid fa-tag"></i> Discount Section</a>
+           <a href="history.html"><i class="fa-solid fa-clock"></i>History</a>
+        </div>
+      </div>
+
+      <div class="nav">
+        <a href="cart.html"><button class="openCart">
+          <i class="fas fa-cart-shopping"></i> Cart</button></a>
+        <button class="openNoti" onclick="toggleNotification()">
+          <i class="fa-solid fa-bell"></i> Notification</button>
+        <a href="#" class="login-icon" onclick="LoginList()">
+          <i class="fas fa-user-circle"></i>
+        </a>
+          <div id="list2">
+              <a href="Profile.html">Profile</a>
+              <a href="logIn.html">Log Out</a>
+          </div>
+
+      <div id="notificationContainer" class="notification-container">
+        <ul id="messageList">
+          <li>Your parcel FURT134652XY has been delivered.</li>
+          <li>Your parcel FURT139875XY has been delivered.</li>
+          <li>Your parcel FURT612980XY is out for delivery.</li>
+        </ul>
+      </div>
+
+  </header>
+
+  <header class="big-header">
+    <h1 >بار ليو</h1>
+    <h1 id="div-bar">  | </h1>
+    <h1 id="half-first">Bar</h1> <h1 id="half-last">akah</h1>
+    <h1 id="half-first">Liv</h1> <h1 id="half-last">ing</h1>
+ </header>
+
+
+  <div class="content">
+    <div class="search-bar">
+      <input type="text" placeholder="Search" onkeyup="searchItems()" id="searchInput">
+      <select id="filterCategory">
+        <option value="all">All Categories</option>
+        <option value="bed">Bed Accessories</option>
+        <option value="lighting">Lighting Accessories</option>
+      </select>
+    </div>
+
+    <div class="list">
+       <div class="grid">
+            <div class="card-lighting">
+                <img src="https://i5.walmartimages.com/seo/IUYT6-Decorative-Table-Lamp-LED-Iron-Ball-Lamp-Muslim-Festival-Decorative-Lamp-Small-Cordless-Lamp-for-Bedside-Desktop-Bedroom-Living-Room-Office_e0f90653-9be7-46ef-9d81-77711bcdd0cc.4a1c21aafc024d5848b0c12cde4a3d04.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF" alt="Hassan Modern Table Lamps">
+                <h3 class="name">Hassan Modern Table Lamps</h3>
+                <p class="price">RM 100.40</p>
+                <p class="location">Kuala Lumpur</p>
+            </div>
+
+            <div class="card-bed">
+                <img src="https://www.papernstitchblog.com/wp-content/uploads/2017/04/how-to-make-standard-pillowcase-1051x1536.jpg" alt="Nur Pillowcases">
+                <h3 class="name">Nur Pillowcases</h3>
+                <p class="price">RM 20.30</p>
+                <p class="location">Penang</p>
+            </div>
+
+            <div class="card-bed">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Ch3qSlD-SGfl2zaEXwG72W621RsGWhpQLw&s" alt="Itqan Bolster Pillow">
+                <h3 class="name">Itqan Bolster Pillow</h3>
+                <p class="price">RM 40.00</p>
+                <p class="location">Kelantan</p>
+            </div>
+
+            <div class="card-lighting">
+                <img src="https://cdn1.npcdn.net/images/e81f23c460ee4e2a1b106fa433a63187_1705570856.webp?md5id=6ddefcb8a5912083892616ef3c95a8b6&new_width=1000&new_height=1000&size=max&w=1697096503&from=jpeg&type=1" alt="Furqan Minimalist Chandelier">
+                <h3 class="name">Furqan Chandelier</h3>
+                <p class="price">RM 2223.40</p>
+                <p class="location">Sarawak</p>
+            </div>
+
+            <div class="card-lighting">
+                <img src="https://down-my.img.susercontent.com/file/sg-11134201-7rblr-lmhlljuv5eu17b" alt="Barakah Reading Lights">
+                <h3 class="name">Barakah Reading Lights</h3>
+                <p class="price">RM 1220.00</p>
+                <p class="location">Sabah</p>
+            </div>
+
+            <div class="card-bed">
+              <img src="https://ethicalbedding.com/cdn/shop/products/ethical-bedding-silk-bed-sheets-pillowcases-632_400x.jpg?v=1696929322" alt="Hassan Comforters">
+              <h3 class="name">Hassan Comforters</h3>
+              <p class="price">RM 100.40</p>
+              <p class="location">Kuala Lumpur</p>
+            </div>
+
+            <div class="card-bed">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTjPBl7v1LPHEGpa3k3RU0c8pqlcOBzBtwiMnzZzo58G2DAcxllXQhKWk9uvkQWZjyWokBZ3lqLTjk7QZLc2nuRUiZwQphgQj6egZQf8nllA2s8v9Je3hO2t1_6XuSxhQX0jc3yrp8&usqp=CAc" alt="Xuhd Throw Pillow">
+                <h3 class="name">Xuhd Throw Pillow</h3>
+                <p class="price">RM 35.40</p>
+                <p class="location">Terengganu</p>
+            </div>
+
+            <div class="card-bed">
+                <img src="https://cdn.thewirecutter.com/wp-content/media/2022/03/electricblankets-2048px-3805-2.jpeg?width=2048&quality=75&crop=2:1&auto=webp" alt="Electric Heated Blankets">
+                <h3 class="name">Electric Heated Blankets</h3>
+                <p class="price">RM 87.00</p>
+                <p class="location">Pahang</p>
+            </div>
+
+            <div class="card-lighting">
+                <img src="https://s.alicdn.com/@sc04/kf/H74dfa0621be24cb484118ee2374faa8c6.jpg_720x720q50.jpg" alt="Battery Night Lights">
+                <h3 class="name">Battery Night Lights</h3>
+                <p class="price">RM 113.40</p>
+                <p class="location">Johor</p>
+            </div>
+
+            <div class="card-bed">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiFQan_5DzSd_CG8uGquAl_00SrT3DjrwbPA&s" alt="Noor Fitted Sheets">
+                <h3 class="name">Noor Fitted Sheets</h3>
+                <p class="price">RM 120.10</p>
+                <p class="location">Perlis</p>
+            </div>
+
+            <div class="card-lighting">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsl75ph4Lebg6y8NFYN-YlFYEUBdvH8WB8g&s" alt="Crystal Table Lamps">
+                <h3 class="name">Crystal Table Lamps</h3>
+                <p class="price">RM 50.40</p>
+                <p class="location">Negeri Sembilan</p>
+            </div>
+
+            <div class="card-bed">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGSNayIPGUNPB6MfOgM5hIyod3uwRj92NmlA&s" alt="Rahmah Mattress Protectors">
+                <h3 class="name">Mattress Protectors</h3>
+                <p class="price">RM 140.40</p>
+                <p class="location">Selangor</p>
+            </div>
+       </div>
+    </div>
+      <script src="main.js"></script>
+</body>

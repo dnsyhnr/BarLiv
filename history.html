@@ -1,0 +1,173 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barakah Living</title>
+    <link rel="stylesheet" href="stylingBarLiv.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="small-header">
+      <div  class= "icon-menu">
+        <button class="menu" onclick="openMenu()">
+          <i class="fas fa-bars fe-2x"></i>
+        </button>
+      </div>
+
+      <div class="sidebar" id="sidebar">
+        <div class="sideHeader"><header class="side">
+          <h1 class="shortTitle"><i class="fa-solid fa-star-and-crescent"></i>BarLiv</h1>
+        </header></div>
+
+        <div class="menuList">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="#" class="categories" onclick="categoryList()">
+            <i class="fa-solid fa-list"></i> Categories</a>
+              <div id="list">
+                <a href="livingRoom.html">Living Room</a>
+                <a href="Kitchen.html">Kitchen</a>
+                <a href="Bedroom.html">Bedroom</a>
+                <a href="accessoriesDeco.html">Accessories Deco</a>
+                <a href="Other.html">Others</a>
+              </div>
+          <a href="discount.html"> <i class="fa-solid fa-tag"></i> Discount Section</a>
+           <a href="history.html"><i class="fa-solid fa-clock"></i>History</a>
+        </div>
+      </div>
+
+      <div class="nav">
+        <a href="cart.html"><button class="openCart">
+          <i class="fas fa-cart-shopping"></i> Cart</button></a>
+        <button class="openNoti" onclick="toggleNotification()">
+          <i class="fa-solid fa-bell"></i> Notification</button>
+        <a href="#" class="login-icon" onclick="LoginList()">
+          <i class="fas fa-user-circle"></i>
+        </a>
+          <div id="list2">
+              <a href="Profile.html">Profile</a>
+              <a href="logIn.html">Log Out</a>
+          </div>
+
+      <div id="notificationContainer" class="notification-container">
+        <ul id="messageList">
+          <li>Your parcel FURT134652XY has been delivered.</li>
+          <li>Your parcel FURT139875XY has been delivered.</li>
+          <li>Your parcel FURT612980XY is out for delivery.</li>
+        </ul>
+      </div>
+
+  </header>
+
+  <header class="big-header">
+    <h1 >بار ليو</h1>
+    <h1 id="div-bar">  | </h1>
+    <h1 id="half-first">Bar</h1> <h1 id="half-last">akah</h1>
+    <h1 id="half-first">Liv</h1> <h1 id="half-last">ing</h1>
+ </header>
+
+
+ <div class="content">
+   <select id="filterCategory">
+  <option value="all">All</option>
+  <option value="completed">Completed</option>
+  <option value="canceled">Canceled</option>
+</select>
+
+
+     <div class="history-container">
+         <div class="grid">
+             <div class="item-completed">
+                 <img src="https://m.media-amazon.com/images/I/81bJXAdn0lL.jpg" alt="Completed Item">
+                 <h3>As-Salam Sectional Sofa : x1</h3>
+                 <p class="price">RM 1220.40</p>
+                 <p class="location">Selangor</p>
+                 <p class="date:time">12 Feb 2024 : 13:00</p>
+                 <p class="status">completed</p>
+                 <button class="order-again-btn" onclick="orderAgain('As-Salam Sectional Sofa', 1220.40)">Order Again</button>
+             </div>
+
+             <div class="item-completed">
+                 <img src="https://m.media-amazon.com/images/I/713%20GPeSwhL.jpg" alt="Completed Item">
+                 <h3>Ridwan Recline : x1</h3>
+                 <p class="price">RM 700.30</p>
+                 <p class="location">Selangor</p>
+                 <p class="date:time">12 Feb 2024 : 13:00</p>
+                 <p class="status">completed</p>
+                 <button class="order-again-btn" onclick="orderAgain('Ridwan Recline ', 700.30)">Order Again</button>
+             </div>
+
+             <div class="item-canceled">
+                 <img src="https://eurekaergonomic.com/cdn/shop/files/Image05_5ca8514f-e79b-4bf4-87c8-4bef1a7f861c.jpg" alt="Canceled Item">
+                 <h3>Itqan Lounge Chair : x2</h3>
+                 <p class="price">RM 1000.00</p>
+                 <p class="location">Kedah</p>
+                 <p class="date:time">12 Feb 2024 : 13:00</p>
+                 <p class="status">canceled</p>
+                 <button class="order-again-btn" onclick="orderAgain('Itqan Lounge Chair', 1000.00)">Order Again</button>
+             </div>
+
+             <div class="item-completed">
+                 <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1675270879-traditional_sofa_love_seat-2_1.jpg" alt="Completed Item">
+                 <h3>Mawaddah Love Seat : x2</h3>
+                 <p class="price">RM 1550.40</p>
+                 <p class="location">Penang</p>
+                 <p class="date:time">12 Feb 2024 : 13:00</p>
+                 <p class="status">completed</p>
+                 <button class="order-again-btn" onclick="orderAgain('Mawaddah Love Seat', 1550.400)">Order Again</button>
+             </div>
+
+             <div class="item-completed">
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpLCNoga4WwXs5MA1I43yyl4_dfpRG08N0uw&s" alt="Completed Item">
+                 <h3>Sidq Console Table : x1</h3>
+                 <p class="price">RM 1220.00</p>
+                 <p class="location">Sarawak</p>
+                 <p class="date:time">12 Feb 2024 : 13:00</p>
+                 <p class="status">completed</p>
+                 <button class="order-again-btn" onclick="orderAgain('Sidq Console Table', 1220.00)">Order Again</button>
+             </div>
+
+             <div class="item-canceled">
+                 <img src="https://s.alicdn.com/@sc04/kf/H63ef1fd7ddf34c9991ef42a0ca49ebf3x.jpg_300x300.jpg" alt="Canceled Item">
+                 <h3>Adl Coffee Table Set : x1</h3>
+                 <p class="price">RM 1020.40</p>
+                 <p class="location">Pahang</p>
+                 <p class="date:time">12 Feb 2024 : 13:00</p>
+                 <p class="status">canceled</p>
+                 <button class="order-again-btn" onclick="orderAgain('Adl Coffee Table Set', 1220.40)">Order Again</button>
+             </div>
+
+             <div class="item-completed">
+                 <img src="https://i5.walmartimages.com/asr/de75e591-6350-40c4-8c8b-dfe2f00bf749.b12ab83bcbb702dd01fa886cd9593006.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Completed Item">
+                 <h3>Xuhd Accent Chair : x1</h3>
+                 <p class="price">RM 1150.40</p>
+                 <p class="location">Selangor</p>
+                 <p class="date:time">12 Feb 2024 : 13:00</p>
+                 <p class="status">completed</p>
+                 <button class="order-again-btn" onclick="orderAgain('Xuhd Accent Chair', 1150.40)">Order Again</button>
+             </div>
+
+             <div class="item-completed">
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHKWBkJemIxeOFuRtxBhcG8tTV7GiwWgPJ8A&s" alt="Completed Item">
+                 <h3>Tawakkul Side Table : x1</h3>
+                 <p class="price">RM 1770.00</p>
+                 <p class="location">Melaka</p>
+                 <p class="date:time">12 Feb 2024 : 13:00</p>
+                 <p class="status">completed</p>
+                 <button class="order-again-btn" onclick="orderAgain('Tawakkul Side Table', 1770.00)">Order Again</button>
+             </div>
+
+             <div class="item-canceled">
+                 <img src="https://i5.walmartimages.com/asr/f621c66a-42f3-44a0-b63b-9f1c27b8b7ca.1f78ffe3b7f9e7e4b4e65e272897fcc2.jpeg" alt="Canceled Item">
+                 <h3>Barakah Sofa Set : x2</h3>
+                 <p class="price">RM 1230.40</p>
+                 <p class="location">Johor</p>
+                 <p class="date:time">12 Feb 2024 : 13:00</p>
+                 <p class="status">canceled</p>
+                 <button class="order-again-btn" onclick="orderAgain('Barakah Sofa Set', 1230.40)">Order Again</button>
+             </div>
+         </div>
+     </div>
+ </div>
+<script src="main.js"></script>
+</body>

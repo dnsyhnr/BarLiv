@@ -1,0 +1,174 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barakah Living</title>
+    <link rel="stylesheet" href="stylingBarliv.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+
+    <style>
+      #sidebar .menuList .home{
+        background-color: #1D201D;
+      }
+    </style>
+</head>
+
+<body>
+  <header class="small-header">
+      <div  class= "icon-menu">
+        <button class="menu" onclick="openMenu()">
+          <i class="fas fa-bars fe-2x"></i>
+        </button>
+      </div>
+
+      <div class="sidebar" id="sidebar">
+        <div class="sideHeader"><header class="side">
+          <h1 class="shortTitle"><i class="fa-solid fa-star-and-crescent"></i>BarLiv</h1>
+        </header></div>
+
+        <div class="menuList">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="#" class="categories" onclick="categoryList()">
+            <i class="fa-solid fa-list"></i> Categories</a>
+              <div id="list">
+                <a href="livingRoom.html">Living Room</a>
+                <a href="Kitchen.html">Kitchen</a>
+                <a href="Bedroom.html">Bedroom</a>
+                <a href="accessoriesDeco.html">Accessories Deco</a>
+                <a href="Other.html">other</a>
+              </div>
+          <a href="discount.html"> <i class="fa-solid fa-tag"></i> Discount Section</a>
+           <a href="history.html"><i class="fa-solid fa-clock"></i>History</a>
+        </div>
+      </div>
+
+      <div class="nav">
+        <a href="cart.html"><button class="openCart">
+          <i class="fas fa-cart-shopping"></i> Cart</button></a>
+        <button class="openNoti" onclick="toggleNotification()">
+          <i class="fa-solid fa-bell"></i> Notification</button>
+        <a href="#" class="login-icon" onclick="LoginList()">
+          <i class="fas fa-user-circle"></i>
+        </a>
+          <div id="list2">
+              <a href="Profile.html">Profile</a>
+              <a href="logIn.html">Log Out</a>
+          </div>
+
+      <div id="notificationContainer" class="notification-container">
+        <ul id="messageList">
+          <li>Your parcel FURT134652XY has been delivered.</li>
+          <li>Your parcel FURT139875XY has been delivered.</li>
+          <li>Your parcel FURT612980XY is out for delivery.</li>
+        </ul>
+      </div>
+
+  </header>
+
+  <header class="big-header">
+    <h1 >بار ليو</h1>
+    <h1 id="div-bar">  | </h1>
+    <h1 id="half-first">Bar</h1> <h1 id="half-last">akah</h1>
+    <h1 id="half-first">Liv</h1> <h1 id="half-last">ing</h1>
+ </header>
+
+
+  <div class="content">
+    <div class="search-bar">
+      <input type="text" placeholder="Search" id="searchInput" onkeyup="searchItems()">
+      <select id="filterCategory">
+        <option value="all">All Categories</option>
+        <option value="wall">Wall Accessories</option>
+        <option value="door">Door Accessories</option>
+      </select>
+    </div>
+
+    <div class="list">
+       <div class="grid">
+            <div class="card-wall">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2024/4/409636493/PT/FX/FB/144743175/led-wall-piece-without-watermark-12-500x500.png" alt="Safwan Round Mirrors">
+                <h3 class="name">Safwan Round Mirrors</h3>
+                <p class="price">RM 1220.40</p>
+                <p class="location">Kelantan</p>
+            </div>
+
+            <div class="card-wall">
+                <img src="https://images-cdn.ubuy.co.id/64ad1e54ce847e7b1d079617-islamic-arabic-calligraphy-canvas-wall.jpg" alt="Ridwan Canva Art">
+                <h3 class="name">Ridwan Canva Art</h3>
+                <p class="price">RM 1700.30</p>
+                <p class="location">Terengganu</p>
+            </div>
+
+            <div class="card-wall">
+                <img src="https://cdn20.pamono.com/p/g/1/5/1552117_q5bnqjhd4c/carved-islamic-oval-mirror-1900s-1.jpg" alt="Itqan Antique Mirrors">
+                <h3 class="name">Itqan Antique Mirrors</h3>
+                <p class="price">RM 1000.00</p>
+                <p class="location">Perlis</p>
+            </div>
+
+            <div class="card-wall">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6iIL73qTAxTvayADITTEjHhxRXLURSNHbsw&s" alt="Mawaddah Corner Shelves">
+                <h3 class="name">Mawaddah Corner Shelves</h3>
+                <p class="price">RM 1550.40</p>
+                <p class="location">Penang</p>
+            </div>
+
+            <div class="card-door">
+                <img src="https://down-my.img.susercontent.com/file/19ce70ee8ab337957b3b141efa29a892" alt="Sidq Door Mat">
+                <h3 class="name">Sidq Door Mat</h3>
+                <p class="price">RM 20.00</p>
+                <p class="location">Pahang</p>
+            </div>
+
+            <div class="card-door">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOzpnGdH12geR8_k8yoqpiV4TFAscliZcLcw&s" alt="Adl Glass Knobs">
+                <h3 class="name">Adl Glass Knobs</h3>
+                <p class="price">RM 70.40</p>
+                <p class="location">Melaka</p>
+            </div>
+
+            <div class="card-wall">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMoBj-pf4rxz8d8KMqmCQR7mp8RgDSRbXM4w&s" alt="Islamic Quotes Frames">
+                <h3 class="name">Islamic Quotes Frames</h3>
+                <p class="price">RM 1150.40</p>
+                <p class="location">Perak</p>
+            </div>
+
+            <div class="card-door">
+                <img src="https://i.etsystatic.com/28110116/r/il/02dc58/3643288622/il_570xN.3643288622_jvel.jpg" alt="Personalized Name Signs">
+                <h3 class="name">Personalized Name Signs</h3>
+                <p class="price">RM 90.00</p>
+                <p class="location">Negeri Sembilan</p>
+            </div>
+
+            <div class="card-wall">
+                <img src="https://image.made-in-china.com/202f0j00VfLktKTlIZza/Decorative-Islamic-Mosque-Digital-Islamic-Clock-Wall-Clocks-Quartz-Plastic-Living-Room-Customized-Color-Single-Face-Separates.webp" alt="Barakah Digital Wall Clocks">
+                <h3 class="name">Barakah Digital Wall Clocks</h3>
+                <p class="price">RM 123.40</p>
+                <p class="location">Selangor</p>
+            </div>
+
+            <div class="card-door">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCVDC1ZZWV08p29hbExXVeXVYvEvRncQ77Og&s" alt="Noor Beaded Door Curtains">
+                <h3 class="name">Noor Beaded Door Curtains</h3>
+                <p class="price">RM 112.10</p>
+                <p class="location">Johor</p>
+            </div>
+
+            <div class="card-wall">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNpAj_xY36qGaJSbvgfIrlz9jGoAchHroeLw&s" alt="Sakinah Key Holders">
+                <h3 class="name">Sakinah Key Holders</h3>
+                <p class="price">RM 50.40</p>
+                <p class="location">Kuala Lumpur</p>
+            </div>
+
+            <div class="card-door">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxgUBKJYvEixx6YXJj8uw0L2JhmNyOdorTbw&s" alt="Rahmah Door Hangers">
+                <h3 class="name">Rahmah Door Hangers<h3>
+                <p class="price">RM 24.40</p>
+                <p class="location">Sabah</p>
+            </div>
+       </div>
+    </div>
+      <script src="main.js"></script>
+</body>

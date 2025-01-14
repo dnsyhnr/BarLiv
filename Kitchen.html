@@ -1,0 +1,174 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barakah Living</title>
+    <link rel="stylesheet" href="stylingBarliv.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+
+    <style>
+      #sidebar .menuList .home{
+        background-color: #1D201D;
+      }
+    </style>
+</head>
+
+<body>
+  <header class="small-header">
+      <div  class= "icon-menu">
+        <button class="menu" onclick="openMenu()">
+          <i class="fas fa-bars fe-2x"></i>
+        </button>
+      </div>
+
+      <div class="sidebar" id="sidebar">
+        <div class="sideHeader"><header class="side">
+          <h1 class="shortTitle"><i class="fa-solid fa-star-and-crescent"></i>BarLiv</h1>
+        </header></div>
+
+        <div class="menuList">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="#" class="categories" onclick="categoryList()">
+            <i class="fa-solid fa-list"></i> Categories</a>
+              <div id="list">
+                <a href="livingRoom.html">Living Room</a>
+                <a href="Kitchen.html">Kitchen</a>
+                <a href="Bedroom.html">Bedroom</a>
+                <a href="accessoriesDeco.html">Accessories Deco</a>
+                <a href="Other.html">other</a>
+              </div>
+          <a href="discount.html"> <i class="fa-solid fa-tag"></i> Discount Section</a>
+           <a href="history.html"><i class="fa-solid fa-clock"></i>History</a>
+        </div>
+      </div>
+
+      <div class="nav">
+        <a href="cart.html"><button class="openCart">
+          <i class="fas fa-cart-shopping"></i> Cart</button></a>
+        <button class="openNoti" onclick="toggleNotification()">
+          <i class="fa-solid fa-bell"></i> Notification</button>
+        <a href="#" class="login-icon" onclick="LoginList()">
+          <i class="fas fa-user-circle"></i>
+        </a>
+          <div id="list2">
+              <a href="Profile.html">Profile</a>
+              <a href="logIn.html">Log Out</a>
+          </div>
+
+      <div id="notificationContainer" class="notification-container">
+        <ul id="messageList">
+          <li>Your parcel FURT134652XY has been delivered.</li>
+          <li>Your parcel FURT139875XY has been delivered.</li>
+          <li>Your parcel FURT612980XY is out for delivery.</li>
+        </ul>
+      </div>
+
+  </header>
+
+  <header class="big-header">
+    <h1 >بار ليو</h1>
+    <h1 id="div-bar">  | </h1>
+    <h1 id="half-first">Bar</h1> <h1 id="half-last">akah</h1>
+    <h1 id="half-first">Liv</h1> <h1 id="half-last">ing</h1>
+ </header>
+
+
+  <div class="content">
+    <div class="search-bar">
+      <input type="text" placeholder="Search" onkeyup="searchItems()" id="searchInput">
+      <select id="filterCategory">
+        <option value="all">All Categories</option>
+        <option value="cookware">Cookware & Utensils</option>
+        <option value="table">Tableware</option>
+      </select>
+    </div>
+
+    <div class="list">
+       <div class="grid">
+            <div class="card-cookware">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYIpbjd-o2LiwTdRApGbfaUzmOiLDy-PieyA&s" alt="Hassan Water Pot">
+                <h3 class="name">Hassan Water Pot</h3>
+                <p class="price">RM 120.40</p>
+                <p class="location">Kuala Lumpur</p>
+            </div>
+
+            <div class="card-table">
+                <img src="https://m.media-amazon.com/images/I/71GP8IlHgyL._AC_SL1500_.jpg" alt="Nur Plate Set">
+                <h3 class="name">Nur Plate Set</h3>
+                <p class="price">RM 1200.30</p>
+                <p class="location">Penang</p>
+            </div>
+
+            <div class="card-table">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0PU2EyifLLD5LA_LeOlMxdjKxUpGE5wwyFQ&s" alt="Itqan Dinnerware">
+                <h3 class="name">Itqan Dinnerware</h3>
+                <p class="price">RM 100.00</p>
+                <p class="location">Kelantan</p>
+            </div>
+
+            <div class="card-cookware">
+                <img src="https://i0.wp.com/www.wildwood.com.au/wp-content/uploads/2022/09/308469400_771449633934582_3099246510845128992_n.jpg?fit=1440%2C1440&ssl=1" alt="Furqan Cutting Board">
+                <h3 class="name">Furqan Cutting Board</h3>
+                <p class="price">RM 23.40</p>
+                <p class="location">Sarawak</p>
+            </div>
+
+            <div class="card-cookware">
+                <img src="https://cdn1.sgliteasset.com/GDEALGTE/images/product/product-3953124/3sfE2hRd663b2f543a1d2_1715154772.jpg" alt="Barakah Cookware Set">
+                <h3 class="name">Barakah Cookware Set</h3>
+                <p class="price">RM 1220.00</p>
+                <p class="location">Sabah</p>
+            </div>
+
+            <div class="card-table">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfdl6BcFkEJC6okpvZTZ2fg7oPb4_2KTl89g&s" alt="Arabic Tea Set">
+                <h3 class="name">Arabic Tea Set</h3>
+                <p class="price">RM 1020.40</p>
+                <p class="location">Kedah</p>
+            </div>
+
+            <div class="card-table">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNJ9CfWiwWa07YFApkHIsyP0jqlr1dY226vQ&s" alt="Xuhd Glassware">
+                <h3 class="name">Xuhd Glassware</h3>
+                <p class="price">RM 1150.40</p>
+                <p class="location">Terengganu</p>
+            </div>
+
+            <div class="card-table">
+                <img src="https://down-my.img.susercontent.com/file/a6169f4290f1fc2012ede13a00993b80" alt="Soup Bowl">
+                <h3 class="name">Soup Bowl</h3>
+                <p class="price">RM 17.00</p>
+                <p class="location">Pahang</p>
+            </div>
+
+            <div class="card-cookware">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLKiaKyBGMPYP31aqUO_QlJyzUR4IQm_6t5Q&s" alt="Spice Grinder">
+                <h3 class="name">Spice Grinder</h3>
+                <p class="price">RM 13.40</p>
+                <p class="location">Johor</p>
+            </div>
+
+            <div class="card-table">
+                <img src="https://s.alicdn.com/@sc04/kf/U803185b9dca6482f8d8d9d7d77f4109fD.jpg" alt="Noor Coffee Mug Set">
+                <h3 class="name">Noor Coffee Mug Set</h3>
+                <p class="price">RM 1120.10</p>
+                <p class="location">Perlis</p>
+            </div>
+
+            <div class="card-cookware">
+                <img src="https://down-my.img.susercontent.com/file/8b4b1c40ec1b69482fba721a19bbafe6" alt="Sakinah Cookware Spoon">
+                <h3 class="name">Sakinah Cookware Spoon</h3>
+                <p class="price">RM 50.40</p>
+                <p class="location">Negeri Sembilan</p>
+            </div>
+
+            <div class="card-table">
+                <img src="https://borongchina.com.my/wp-content/uploads/2022/03/Shell-Luxury-Serving-Plate-Ceramic-1.jpg" alt="Rahmah Serving Plate">
+                <h3 class="name">Rahmah Serving Plate</h3>
+                <p class="price">RM 40.40</p>
+                <p class="location">Selangor</p>
+            </div>
+       </div>
+    </div>
+      <script src="main.js"></script>
+</body>
